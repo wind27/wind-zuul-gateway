@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
 
-@Import({ DispatcherServletAutoConfiguration.class, EmbeddedServletContainerAutoConfiguration.class,
-		ErrorMvcAutoConfiguration.class, HttpEncodingAutoConfiguration.class,
-		HttpMessageConvertersAutoConfiguration.class, JacksonAutoConfiguration.class, MultipartAutoConfiguration.class,
-		ServerPropertiesAutoConfiguration.class, WebMvcAutoConfiguration.class })
+//@Import({ DispatcherServletAutoConfiguration.class, EmbeddedServletContainerAutoConfiguration.class,
+//		ErrorMvcAutoConfiguration.class, HttpEncodingAutoConfiguration.class,
+//		HttpMessageConvertersAutoConfiguration.class, JacksonAutoConfiguration.class, MultipartAutoConfiguration.class,
+//		ServerPropertiesAutoConfiguration.class, WebMvcAutoConfiguration.class })
 @EnableZuulProxy
 @SpringBootApplication
 public class WindZuulGatewayApplication {
