@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.*;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
@@ -15,7 +16,9 @@ import org.springframework.context.annotation.Import;
 //		ErrorMvcAutoConfiguration.class, HttpEncodingAutoConfiguration.class,
 //		HttpMessageConvertersAutoConfiguration.class, JacksonAutoConfiguration.class, MultipartAutoConfiguration.class,
 //		ServerPropertiesAutoConfiguration.class, WebMvcAutoConfiguration.class })
+
 @EnableZuulProxy
+@EnableEurekaClient
 @SpringBootApplication
 public class WindZuulGatewayApplication {
 

@@ -21,7 +21,8 @@ public class GatewayFilter extends ZuulFilter{
 
     @Override
     public String filterType() {
-        return null;
+//        return null;
+        return "pre";
     }
 
     @Override
@@ -31,7 +32,8 @@ public class GatewayFilter extends ZuulFilter{
 
     @Override
     public boolean shouldFilter() {
-        return false;
+//        return false;
+        return true;
     }
 
     @Override
