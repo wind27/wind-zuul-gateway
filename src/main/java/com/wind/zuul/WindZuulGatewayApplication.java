@@ -1,4 +1,4 @@
-package com.wind.zuul.main;
+package com.wind.zuul;
 
 import com.netflix.zuul.ZuulFilter;
 import com.wind.zuul.filter.GatewayFilter;
